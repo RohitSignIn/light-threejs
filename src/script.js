@@ -15,7 +15,10 @@ const sizes = {
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(70, sizes.width / sizes.height);
+camera.position.x = -1.2;
+camera.position.y = 1.8;
 camera.position.z = 3;
+
 scene.add(camera);
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);
